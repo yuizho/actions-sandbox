@@ -18,3 +18,5 @@ jobs:
         java-version: 11
     - name: Build And Test
       run: ./mvnw -B package --file pom.xml
+    - name: Create Path Name by the hook information
+      run: echo "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
