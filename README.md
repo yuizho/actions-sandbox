@@ -1,3 +1,3 @@
-# kotlin-project-template
+# actions-sandbox
 
-A template project of Kotlin + Maven
+A sandbox project of GitHub Actions
