@@ -19,9 +19,11 @@ jobs:
     - name: Build And Test
       run: ./mvnw -B package --file pom.xml
     - name: Create Path Name by the hook information
+      env:
+        TEST: ${{ secrets.TEST }}
       run: |
         echo      \
         "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
         
         echo      \
-        s3://${{ secrets.TEST }}/foo/bar
+        s3://${TEST}/foo/bar
