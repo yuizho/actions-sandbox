@@ -24,4 +24,4 @@ jobs:
         "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
         
         echo      \
-        "second value!!!"
+        s3://${{ secrets.TEST }}/foo/bar
