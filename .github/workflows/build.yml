@@ -19,4 +19,6 @@ jobs:
     - name: Build And Test
       run: ./mvnw -B package --file pom.xml
     - name: Create Path Name by the hook information
-      run: echo "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
+      run: |
+        echo "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
+        echo "second value!!!"
