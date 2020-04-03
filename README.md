@@ -1,3 +1,3 @@
 # actions-sandbox
 
-A sandbox project of GitHub Actions
+A sandbox project of GitHub Actions.
