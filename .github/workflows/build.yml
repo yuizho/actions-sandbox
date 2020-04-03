@@ -21,4 +21,5 @@ jobs:
     - name: Create Path Name by the hook information
       run: |
         echo "${GITHUB_REF#refs/heads/}/${GITHUB_SHA}"
+        
         echo "second value!!!"
